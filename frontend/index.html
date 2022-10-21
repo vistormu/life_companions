@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <div id="header"><a href="/" data-link>Life Companions</a></div>
+    <div id="app" style="margin-top: 100px;"></div>
+    <script type="module" , src="/static/js/index.js"></script>
+
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("header").style.fontSize = "30px";
+                document.getElementById("header").style.boxShadow = "0 8px 16px 0 rgba(0, 0, 0, 0.2)"
+            } else {
+                document.getElementById("header").style.fontSize = "50px";
+                document.getElementById("header").style.boxShadow = "0 0 0 0 rgba(0, 0, 0, 0)"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
