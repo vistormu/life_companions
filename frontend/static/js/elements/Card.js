@@ -9,19 +9,21 @@ export default class {
     getHtml() {
         if (!this.locked) {
             return `<div class="card">
-                        <img src="/static/assets/${this.image}" style="width:100%">
                         <div class="card-content">
+                            <img src="/static/assets/${this.image}">
                             <h1><b>${this.title}</b></h1> 
                             <p>${this.description}</p> 
                         </div>
+                        <hr class="rounded">
                     </div>`;
         } else {
             return `<div class="locked-card">
-                        <img src="/static/assets/${this.image}" style="width:100%">
                         <div class="locked-card-content">
-                            <h1><b>Locked</b></h1> 
-                            <p>Se desbloqueará en...</p> 
+                            <img src="/static/assets/lock.png">
+                            <h1 style="color: #c4c4c4"><b>${this.title}</b></h1> 
+                            <p>Contenido bloqueado</p> 
                         </div>
+                        <hr class="rounded" style="border: 1px solid #c4c4c4;">
                     </div>`;
         }
     }

@@ -1,6 +1,6 @@
 import Home from "./views/Home.js"
 import NotFound from "./views/NotFound.js"
-import FirstWeek from "./views/FirstWeek.js"
+import FirstChapter from "./views/FirstChapter.js"
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
@@ -22,7 +22,7 @@ const router = async () => {
     const routes = [
         { path: "/not-found", view: NotFound },
         { path: "/", view: Home },
-        { path: "/first-week", view: FirstWeek },
+        { path: "/first-week", view: FirstChapter },
     ];
 
     // Test each route for potential match

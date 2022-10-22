@@ -7,18 +7,20 @@ export default class extends AbstractView {
         super();
         this.setTitle("Home");
 
-        this.cardWeek1 = new Card("sea.png", "Semana 1", "Miradas furtivas", false)
-        this.cardWeek2 = new Card("sea.png", "Semana 2", "Miradas furtivas", true)
-        this.cardWeek3 = new Card("sea.png", "Semana 3", "Miradas furtivas", true)
-        this.cardWeek4 = new Card("sea.png", "Semana 4", "Miradas furtivas", true)
-        this.cardWeek5 = new Card("sea.png", "Semana 5", "Miradas furtivas", true)
+        this.chaperOneCard = new Card("big_boy.png", "Capítulo 1", "Descripción del capítulo 1", false)
+        this.cardWeek2 = new Card("red_boy.png", "Capítulo 2", "Descripción del capítulo 2", false)
+        this.cardWeek3 = new Card("yellow_boy.png", "Capítulo 3", "Descripción del capítulo 3", false)
+        this.cardWeek4 = new Card("big_boy.png", "Capítulo 4", "Descripción del capítulo 4", true)
+        this.cardWeek5 = new Card("big_boy.png", "Capítulo 5", "Descripción del capítulo 5", true)
     }
 
     async getHtml() {
         return `
-            <p>Aquí una descripción relativamente extensa de lo que va este regalo, con unas palabras bonitas noseke, que le camino nosekuanto, que hay que rememorar todo el camino y eso</p>
+            <div class="content">
+                <p>Aquí una descripción relativamente extensa de lo que va este regalo, con unas palabras bonitas noseke, que le camino nosekuanto, que hay que rememorar todo el camino y eso</p>
+            </div>
             <div class="container">
-                <a href=/first-week data-link>${this.cardWeek1.getHtml()}</a>
+                <a href=/first-week data-link>${this.chaperOneCard.getHtml()}</a>
                 ${this.cardWeek2.getHtml()}
                 ${this.cardWeek3.getHtml()}
                 ${this.cardWeek4.getHtml()}

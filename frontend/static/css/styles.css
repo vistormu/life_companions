@@ -21,7 +21,7 @@ a:active {
 /* CARD */
 .card {
     transition: 0.3s;
-    border: 1px solid #463f3a;
+    /* border: 1px solid #463f3a; */
     padding: 10px;
 }
 
@@ -36,7 +36,7 @@ a:active {
 
 .locked-card {
     transition: 0.3s;
-    border: 1px solid #c4c4c4;
+    /* border: 1px solid #c4c4c4; */
     padding: 10px;
 }
 
@@ -52,6 +52,22 @@ a:active {
     gap: 10px;
 }
 
+/* IMAGES */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+h1 {
+    color: #463f3a
+}
+
+hr.rounded {
+    border: 1px solid #463f3a;
+    border-radius: 2px;
+}
 
 #header {
     padding: 10px 10px;
