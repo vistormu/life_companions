@@ -1,9 +1,10 @@
 export default class {
-    constructor(image, title, description, locked) {
+    constructor(image, title, description, ref, locked) {
         this.image = image
         this.title = title
         this.description = description
         this.locked = locked
+        this.ref = ref
     }
 
     getHtml() {
