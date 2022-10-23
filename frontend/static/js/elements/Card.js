@@ -12,8 +12,8 @@ export default class {
             return `<div class="card">
                         <div class="card-content">
                             <img src="/static/assets/${this.image}">
-                            <h1><b>${this.title}</b></h1> 
-                            <p>${this.description}</p> 
+                            <h2><b>${this.title}</b></h2> 
+                            <p>${this.description}</p>
                         </div>
                         <hr class="rounded">
                     </div>`;
@@ -21,7 +21,7 @@ export default class {
             return `<div class="locked-card">
                         <div class="locked-card-content">
                             <img src="/static/assets/lock.png">
-                            <h1 style="color: #c4c4c4"><b>${this.title}</b></h1> 
+                            <h2 style="color: #c4c4c4"><b>${this.title}</b></h2> 
                             <p>Contenido bloqueado</p> 
                         </div>
                         <hr class="rounded" style="border: 1px solid #c4c4c4;">
