@@ -7,7 +7,7 @@ export default class extends AbstractView {
         super();
         this.setTitle("Home");
 
-        const chapterOneCard = new Card("green_blob.png", "Capítulo 1", "Descripción del capítulo 1", "/chapter-one", true);
+        const chapterOneCard = new Card("green_blob.png", "Capítulo 1", "La Luz de La Balanza", "/chapter-one", false);
         const chapterTwoCard = new Card("red_blob.png", "Capítulo 2", "Descripción del capítulo 2", "/chapter-two", true);
         const chapterThreeCard = new Card("yellow_blob.png", "Capítulo 3", "Descripción del capítulo 3", "/chapter-three", true);
         const chapterFourCard = new Card("pink_blob.png", "Capítulo 4", "Descripción del capítulo 4", "/chapter-four", true);
@@ -21,7 +21,7 @@ export default class extends AbstractView {
             if (card.locked) {
                 cardHtml = card.getHtml();
             } else {
-                cardHtml = `<a  href="${card.ref}" data-link>` + card.getHtml() + `</a>`;
+                cardHtml = `<a  href="${card.ref}" [data-link]>` + card.getHtml() + `</a>`;
             }
             this.chaptersHtml.push(cardHtml);
         });
