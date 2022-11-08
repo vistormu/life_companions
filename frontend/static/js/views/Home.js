@@ -8,7 +8,7 @@ export default class extends AbstractView {
         this.setTitle("Home");
 
         const chapterOneCard = new Card("green_blob.png", "Capítulo 1", "La Luz de La Balanza", "/chapter-one", false);
-        const chapterTwoCard = new Card("red_blob.png", "Capítulo 2", "Descripción del capítulo 2", "/chapter-two", true);
+        const chapterTwoCard = new Card("red_blob.png", "Capítulo 2", "Las Cuatro Estaciones", "/chapter-two", false);
         const chapterThreeCard = new Card("yellow_blob.png", "Capítulo 3", "Descripción del capítulo 3", "/chapter-three", true);
         const chapterFourCard = new Card("pink_blob.png", "Capítulo 4", "Descripción del capítulo 4", "/chapter-four", true);
         const chapterFiveCard = new Card("blue_blob.png", "Capítulo 5", "Descripción del capítulo 5", "/chapter-five", true);
